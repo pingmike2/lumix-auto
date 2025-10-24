@@ -1,1 +1,1 @@
-# hostmybot-auto
+# njghosting-auto
