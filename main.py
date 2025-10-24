@@ -147,7 +147,7 @@ def main():
 
         sillydev_cookie = os.environ.get('SILLYDEV_COOKIE')
         if sillydev_cookie:
-            context.add_cookies([{'name': COOKIE_NAME, 'value': sillydev_cookie, 'domain': '.panel.hostmybot.net','path': '/', 'expires': int(time.time()) + 3600 * 24 * 365, 'httpOnly': True, 'secure': True, 'sameSite': 'Lax'}])
+            context.add_cookies([{'name': COOKIE_NAME, 'value': sillydev_cookie, 'domain': '.panel.njghosting.net','path': '/', 'expires': int(time.time()) + 3600 * 24 * 365, 'httpOnly': True, 'secure': True, 'sameSite': 'Lax'}])
 
         page = context.new_page()
         page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
